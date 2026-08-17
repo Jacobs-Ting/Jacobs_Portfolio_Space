@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jacobs 的 AI 創作空間：求職轉職、工作工具與休閒娛樂。" />
+  <title>Jacobs 的 AI 創作空間</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="回到首頁" data-view="home">
+      <span class="brand-mark">J</span>
+      <span>JACOBS <b>AI LAB</b></span>
+    </a>
+    <button class="home-button" type="button" data-view="home">
+      <span>⌂</span> 返回首頁
+    </button>
+  </header>
+
+  <main>
+    <section class="view active" id="home" aria-labelledby="home-title">
+      <div class="hero">
+        <p class="eyebrow"><span></span> EXPLORE · CREATE · EVOLVE</p>
+        <h1 id="home-title">Jacobs 的<br><em>AI 創作空間</em></h1>
+        <p class="hero-copy">把靈感化成行動，讓 AI 陪你探索職涯、提升工作效率，也為生活增添一點有趣的未知。</p>
+        <div class="scroll-hint">選擇你的探索方向 <span>↓</span></div>
+      </div>
+
+      <div class="main-grid">
+        <a class="portal career" href="https://jacobs-ting.github.io/Interview_Simulation/" target="_blank" rel="noopener noreferrer" aria-label="開啟求職轉職面試模擬（新分頁）">
+          <div class="portal-number">01</div>
+          <div class="portal-icon" aria-hidden="true">↗</div>
+          <div class="portal-content">
+            <p>CAREER PATH</p>
+            <h2>求職轉職</h2>
+            <span>探索職涯可能，打造你的下一步</span>
+          </div>
+          <div class="portal-arrow">→</div>
+        </a>
+
+        <article class="portal work" tabindex="0" role="button" data-view="work" aria-label="進入工作專用">
+          <div class="portal-number">02</div>
+          <div class="portal-icon" aria-hidden="true">⌘</div>
+          <div class="portal-content">
+            <p>WORKSPACE</p>
+            <h2>工作專用</h2>
+            <span>實用工具，讓工作更流暢、更專業</span>
+          </div>
+          <div class="portal-arrow">→</div>
+        </article>
+
+        <article class="portal leisure" tabindex="0" role="button" data-view="leisure" aria-label="進入休閒娛樂">
+          <div class="portal-number">03</div>
+          <div class="portal-icon" aria-hidden="true">✦</div>
+          <div class="portal-content">
+            <p>PLAYGROUND</p>
+            <h2>休閒娛樂</h2>
+            <span>在遊戲與神秘之間，遇見另一個自己</span>
+          </div>
+          <div class="portal-arrow">→</div>
+        </article>
+
+        <article class="portal electromagnetics" tabindex="0" role="button" data-view="electromagnetics" aria-label="進入電磁學學習筆記">
+          <div class="portal-number">04</div>
+          <div class="portal-icon" aria-hidden="true">∿</div>
+          <div class="portal-content">
+            <p>ELECTROMAGNETICS</p>
+            <h2>電磁學學習筆記</h2>
+            <span>從場與波出發，探索電磁世界的運作方式</span>
+          </div>
+          <div class="portal-arrow">→</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="view subpage" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <button class="back-link" type="button" data-view="home">← 回到探索空間</button>
+        <p class="eyebrow"><span></span> WORKSPACE · 02</p>
+        <h1 id="work-title">工作專用</h1>
+        <p>用對工具，把每一次工作挑戰變成扎實的成長。</p>
+      </div>
+      <div class="tool-grid">
+        <a class="tool-card english" href="https://jacobs-ting.github.io/English-Training/" target="_blank" rel="noopener noreferrer" aria-label="開啟工程英文練習（新分頁）">
+          <div class="tool-top"><span>01</span><i>↗</i></div>
+          <div class="tool-symbol">Aa</div>
+          <div><small>ENGINEERING ENGLISH</small><h2>工程英文練習</h2><p>強化技術情境表達，讓你的專業跨越語言界線。</p></div>
+        </a>
+        <a class="tool-card template" href="https://jacobs-ting.github.io/PM_Temp/" target="_blank" rel="noopener noreferrer" aria-label="開啟 PM 工作模板（新分頁）">
+          <div class="tool-top"><span>02</span><i>↗</i></div>
+          <div class="tool-symbol">▦</div>
+          <div><small>PM TOOLKIT</small><h2>PM 工作模板</h2><p>從規劃到覆盤，用結構化模板推動專案前進。</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="view subpage" id="leisure" aria-labelledby="leisure-title">
+      <div class="section-heading">
+        <button class="back-link" type="button" data-view="home">← 回到探索空間</button>
+        <p class="eyebrow"><span></span> PLAYGROUND · 03</p>
+        <h1 id="leisure-title">休閒娛樂</h1>
+        <p>暫時離開日常規則，來一場關於策略與直覺的小冒險。</p>
+      </div>
+      <div class="tool-grid">
+        <a class="tool-card game" href="#" data-demo="工作養成策略小遊戲">
+          <div class="tool-top"><span>01</span><i>↗</i></div>
+          <div class="tool-symbol">♟</div>
+          <div><small>CAREER QUEST</small><h2>工作養成策略小遊戲</h2><p>做出選擇、累積能力，玩出屬於你的職涯路線。</p></div>
+        </a>
+        <a class="tool-card tarot" href="#" data-demo="神秘塔羅占卜">
+          <div class="tool-top"><span>02</span><i>↗</i></div>
+          <div class="tool-symbol">☾</div>
+          <div><small>MYSTIC TAROT</small><h2>神秘塔羅占卜</h2><p>靜下心抽一張牌，聽聽直覺想告訴你的訊息。</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="view subpage" id="career" aria-labelledby="career-title">
+      <div class="section-heading centered">
+        <button class="back-link" type="button" data-view="home">← 回到探索空間</button>
+        <p class="eyebrow"><span></span> CAREER PATH · 01</p>
+        <h1 id="career-title">求職轉職</h1>
+        <p>新的職涯工具正在準備中，下一段旅程即將展開。</p>
+        <div class="coming-soon">COMING SOON <b>·</b> 敬請期待</div>
+      </div>
+    </section>
+
+    <section class="view subpage" id="electromagnetics" aria-labelledby="electromagnetics-title">
+      <div class="section-heading">
+        <button class="back-link" type="button" data-view="home">← 回到探索空間</button>
+        <p class="eyebrow"><span></span> ELECTROMAGNETICS · 04</p>
+        <h1 id="electromagnetics-title">電磁學學習筆記</h1>
+        <p>以互動模擬連結理論與現象，讓抽象的場與波變得清晰可見。</p>
+      </div>
+      <div class="tool-grid">
+        <a class="tool-card waveguide" href="https://jacobs-ting.github.io/Waveguide_Simulation/" target="_blank" rel="noopener noreferrer" aria-label="開啟波導管研究模擬（新分頁）">
+          <div class="tool-top"><span>01</span><i>↗</i></div>
+          <div class="tool-symbol">⌁</div>
+          <div><small>WAVEGUIDE LAB</small><h2>波導管研究模擬</h2><p>探索電磁波在波導管中的傳播、模態分布與截止頻率。</p></div>
+        </a>
+        <a class="tool-card maxwell" href="https://jacobs-ting.github.io/EM_Simulation/" target="_blank" rel="noopener noreferrer" aria-label="開啟 Maxwell 方程組研究模擬（新分頁）">
+          <div class="tool-top"><span>02</span><i>↗</i></div>
+          <div class="tool-symbol">∇</div>
+          <div><small>MAXWELL EQUATIONS</small><h2>Maxwell 方程組研究模擬</h2><p>從電場、磁場到電磁波，直觀理解四大方程式之間的關係。</p></div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 JACOBS AI LAB</span><span>MADE WITH CURIOSITY & AI</span></footer>
+
+  <div class="toast" role="status" aria-live="polite"><span>✦</span><div><b></b><small>功能頁面準備中</small></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
