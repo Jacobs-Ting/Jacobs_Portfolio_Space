@@ -97,6 +97,7 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .tool-card:hover::after { right: -100px; top: -110px; }
 .tool-card.english { color: var(--cyan); }
 .tool-card.template { color: var(--gold); }
+.tool-card.bom { color: #7ddc9b; }
 .tool-card.game { color: #ff8f68; }
 .tool-card.tarot { color: var(--violet); }
 .tool-card.waveguide { color: #64a7ff; }
