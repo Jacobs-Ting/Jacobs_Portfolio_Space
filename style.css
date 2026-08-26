@@ -66,9 +66,10 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .scroll-hint span { color: var(--gold); margin-top: 10px; }
 
 .main-grid { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); margin-bottom: 70px; }
-.portal { min-height: 340px; padding: 28px 30px 30px; border-right: 1px solid var(--line); position: relative; overflow: hidden; cursor: pointer; transition: .4s cubic-bezier(.22,1,.36,1); outline: none; color: var(--text); text-decoration: none; }
+.portal { min-height: 340px; padding: 28px 30px 30px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); position: relative; overflow: hidden; cursor: pointer; transition: .4s cubic-bezier(.22,1,.36,1); outline: none; color: var(--text); text-decoration: none; }
 .portal:nth-child(2n) { border-right: none; }
-.portal:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+.portal:nth-child(odd):last-child { grid-column: 1 / -1; border-right: none; border-bottom: none; }
+.portal:last-child { border-bottom: none; }
 .portal::before { content: ""; position: absolute; inset: 100% 0 0; background: linear-gradient(150deg, rgba(255,255,255,.08), rgba(255,255,255,.015)); transition: .45s cubic-bezier(.22,1,.36,1); }
 .portal:hover::before, .portal:focus::before { inset: 0; }
 .portal:hover, .portal:focus { transform: translateY(-8px); border-top: 1px solid currentColor; }
@@ -77,6 +78,7 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .work .portal-icon { color: var(--cyan); }
 .leisure .portal-icon { color: var(--violet); }
 .electromagnetics .portal-icon { color: #64a7ff; }
+.profile .portal-icon { color: var(--gold); }
 .portal-content { position: absolute; left: 30px; bottom: 31px; }
 .portal-content p { color: #74747e; font: 600 10px "Space Grotesk"; letter-spacing: .22em; margin: 0 0 9px; }
 .portal-content h2 { font-size: 29px; margin: 0 0 9px; }
@@ -100,8 +102,10 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .tool-card.bom { color: #7ddc9b; }
 .tool-card.game { color: #ff8f68; }
 .tool-card.tarot { color: var(--violet); }
+.tool-card.art3d { color: #ff75a0; }
 .tool-card.waveguide { color: #64a7ff; }
 .tool-card.maxwell { color: #d27cff; }
+.tool-card.antenna { color: #36d9e8; }
 .tool-top { display: flex; justify-content: space-between; font: 500 11px "Space Grotesk"; letter-spacing: .2em; }
 .tool-top i { font-style: normal; font-size: 22px; transition: .25s; }
 .tool-card:hover .tool-top i { transform: translate(4px,-4px); }
@@ -114,6 +118,17 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .centered .back-link { display: block; margin-left: auto; margin-right: auto; }
 .coming-soon { display: inline-block; margin-top: 55px; padding: 17px 26px; border: 1px solid var(--line); color: var(--gold); font: 600 11px "Space Grotesk"; letter-spacing: .25em; }
 .coming-soon b { padding: 0 9px; }
+
+.about-section { margin-bottom: 70px; }
+.about-header { margin-bottom: 24px; }
+.about-header h2 { font-size: clamp(32px, 4.5vw, 44px); margin: 0; font-weight: 700; color: var(--text); }
+.about-container { border: 1px solid var(--line); background: rgba(255,255,255,.015); padding: 36px 40px; position: relative; overflow: hidden; }
+.about-container::before { content: ""; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: linear-gradient(180deg, var(--gold), var(--cyan)); }
+.about-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+.badge { font-family: "Space Grotesk", "Noto Sans TC", sans-serif; font-size: 11.5px; font-weight: 500; letter-spacing: .06em; color: var(--gold); background: rgba(231,189,113,.08); border: 1px solid rgba(231,189,113,.25); padding: 5px 14px; border-radius: 99px; }
+.about-body { display: flex; flex-direction: column; gap: 18px; }
+.about-body p { color: #b8b7c0; font-size: 15px; line-height: 1.95; margin: 0; }
+.about-body strong { color: var(--text); font-weight: 600; }
 
 footer { max-width: 1440px; margin: auto; padding: 28px 5vw 34px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; color: #60606a; font: 500 9px "Space Grotesk"; letter-spacing: .2em; }
 .toast { position: fixed; z-index: 30; right: 30px; bottom: 30px; padding: 15px 21px; display: flex; align-items: center; gap: 13px; color: var(--text); background: #181920; border: 1px solid var(--line); box-shadow: 0 20px 60px rgba(0,0,0,.45); transform: translateY(120px); opacity: 0; transition: .4s; }
@@ -128,11 +143,13 @@ footer { max-width: 1440px; margin: auto; padding: 28px 5vw 34px; border-top: 1p
   .main-grid { grid-template-columns: 1fr; }
   .portal { min-height: 245px; border-right: 0; border-bottom: 1px solid var(--line); }
   .portal:nth-child(2n) { border-right: 0; }
-  .portal:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .portal:nth-child(odd):last-child { grid-column: auto; border-right: 0; border-bottom: 0; }
   .portal:last-child { border-bottom: 0; }
   .portal-icon { margin-top: 25px; width: 52px; height: 52px; }
   .tool-grid { grid-template-columns: 1fr; }
   .tool-card { min-height: 330px; }
+  .about-container { padding: 28px 24px; }
+  .about-body p { font-size: 14.5px; line-height: 1.85; }
   .scroll-hint { display: none; }
 }
 @media (max-width: 520px) {
@@ -148,6 +165,10 @@ footer { max-width: 1440px; margin: auto; padding: 28px 5vw 34px; border-top: 1p
   .subpage { padding-top: 40px; }
   .section-heading .back-link { margin-bottom: 38px; }
   .tool-card { min-height: 310px; padding: 24px; }
+  .about-container { padding: 22px 18px; }
+  .about-body p { font-size: 13.5px; line-height: 1.8; }
+  .about-badges { gap: 7px; margin-bottom: 20px; }
+  .badge { font-size: 10.5px; padding: 4px 10px; }
   footer { flex-direction: column; gap: 10px; }
   .toast { left: 20px; right: 20px; bottom: 20px; }
 }
