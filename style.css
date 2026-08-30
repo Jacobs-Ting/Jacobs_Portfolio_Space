@@ -76,6 +76,7 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .portal-number { color: #6d6d77; font: 500 11px "Space Grotesk"; letter-spacing: .2em; }
 .portal-icon { width: 64px; height: 64px; border: 1px solid var(--line); border-radius: 50%; display: grid; place-items: center; margin-top: 45px; color: var(--gold); font-size: 25px; position: relative; }
 .work .portal-icon { color: var(--cyan); }
+.career .portal-icon { color: var(--gold); }
 .leisure .portal-icon { color: var(--violet); }
 .electromagnetics .portal-icon { color: #64a7ff; }
 .profile .portal-icon { color: var(--gold); }
@@ -97,6 +98,8 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .tool-card::after { content: ""; width: 300px; height: 300px; position: absolute; right: -170px; top: -170px; border-radius: 50%; background: currentColor; opacity: .08; filter: blur(25px); transition: .4s; }
 .tool-card:hover { transform: translateY(-7px); border-color: currentColor; }
 .tool-card:hover::after { right: -100px; top: -110px; }
+.tool-card.match { color: #ff9f43; }
+.tool-card.resume { color: var(--cyan); }
 .tool-card.english { color: var(--cyan); }
 .tool-card.template { color: var(--gold); }
 .tool-card.bom { color: #7ddc9b; }
