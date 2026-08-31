@@ -79,6 +79,7 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .career .portal-icon { color: var(--gold); }
 .leisure .portal-icon { color: var(--violet); }
 .electromagnetics .portal-icon { color: #64a7ff; }
+.tech-studio .portal-icon { color: #58d8d3; }
 .profile .portal-icon { color: var(--gold); }
 .portal-content { position: absolute; left: 30px; bottom: 31px; }
 .portal-content p { color: #74747e; font: 600 10px "Space Grotesk"; letter-spacing: .22em; margin: 0 0 9px; }
@@ -106,6 +107,9 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .tool-card.game { color: #ff8f68; }
 .tool-card.tarot { color: var(--violet); }
 .tool-card.art3d { color: #ff75a0; }
+.tool-card.rf-workshop { color: #ff9248; }
+.tool-card.science-classroom { color: #58d8d3; }
+.tool-card.em-notes { color: #64a7ff; }
 .tool-card.waveguide { color: #64a7ff; }
 .tool-card.maxwell { color: #d27cff; }
 .tool-card.antenna { color: #36d9e8; }

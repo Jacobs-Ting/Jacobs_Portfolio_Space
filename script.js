@@ -22,13 +22,10 @@ viewTriggers.forEach(trigger => {
     event.preventDefault();
     showView(trigger.dataset.view);
   });
-});
-
-portals.forEach(portal => {
-  portal.addEventListener('keydown', event => {
+  trigger.addEventListener('keydown', event => {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
-      showView(portal.dataset.view);
+      showView(trigger.dataset.view);
     }
   });
 });
