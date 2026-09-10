@@ -112,7 +112,10 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .tool-card.science-classroom { color: #58d8d3; }
 .tool-card.em-notes { color: #64a7ff; }
 .tool-card.comm-notes { color: #818cf8; }
+.tool-card.circuit-notes { color: #f59e0b; }
+.tool-card.lna-stability { color: #f59e0b; }
 .tool-card.modulation { color: #f472b6; }
+.tool-card.fading-channel { color: #38bdf8; }
 .tool-card.waveguide { color: #64a7ff; }
 .tool-card.maxwell { color: #d27cff; }
 .tool-card.antenna { color: #36d9e8; }
