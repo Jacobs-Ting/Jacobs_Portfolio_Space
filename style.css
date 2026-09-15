@@ -69,7 +69,8 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .portal { min-height: 340px; padding: 28px 30px 30px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); position: relative; overflow: hidden; cursor: pointer; transition: .4s cubic-bezier(.22,1,.36,1); outline: none; color: var(--text); text-decoration: none; }
 .portal:nth-child(2n) { border-right: none; }
 .portal:nth-child(odd):last-child { grid-column: 1 / -1; border-right: none; border-bottom: none; }
-.portal:last-child { border-bottom: none; }
+.portal:last-child,
+.portal:nth-last-child(2):nth-child(odd) { border-bottom: none; }
 .portal::before { content: ""; position: absolute; inset: 100% 0 0; background: linear-gradient(150deg, rgba(255,255,255,.08), rgba(255,255,255,.015)); transition: .45s cubic-bezier(.22,1,.36,1); }
 .portal:hover::before, .portal:focus::before { inset: 0; }
 .portal:hover, .portal:focus { transform: translateY(-8px); border-top: 1px solid currentColor; }
@@ -81,6 +82,7 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .electromagnetics .portal-icon { color: #64a7ff; }
 .tech-studio .portal-icon { color: #58d8d3; }
 .profile .portal-icon { color: var(--gold); }
+.news .portal-icon { color: #38bdf8; border-color: rgba(56, 189, 248, .3); }
 .portal-content { position: absolute; left: 30px; bottom: 31px; }
 .portal-content p { color: #74747e; font: 600 10px "Space Grotesk"; letter-spacing: .22em; margin: 0 0 9px; }
 .portal-content h2 { font-size: 29px; margin: 0 0 9px; }
@@ -114,6 +116,7 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .tool-card.comm-notes { color: #818cf8; }
 .tool-card.circuit-notes { color: #f59e0b; }
 .tool-card.lna-stability { color: #f59e0b; }
+.tool-card.pa-nonlinearity { color: #fb7185; }
 .tool-card.modulation { color: #f472b6; }
 .tool-card.fading-channel { color: #38bdf8; }
 .tool-card.waveguide { color: #64a7ff; }
@@ -217,6 +220,7 @@ footer { max-width: 1440px; margin: auto; padding: 28px 5vw 34px; border-top: 1p
   .portal { min-height: 245px; border-right: 0; border-bottom: 1px solid var(--line); }
   .portal:nth-child(2n) { border-right: 0; }
   .portal:nth-child(odd):last-child { grid-column: auto; border-right: 0; border-bottom: 0; }
+  .portal:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--line); }
   .portal:last-child { border-bottom: 0; }
   .portal-icon { margin-top: 25px; width: 52px; height: 52px; }
   .tool-grid { grid-template-columns: 1fr; }
