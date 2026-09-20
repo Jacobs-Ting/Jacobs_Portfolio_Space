@@ -112,6 +112,7 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .tool-card.art3d { color: #ff75a0; }
 .tool-card.fps-game { color: #4ade80; }
 .tool-card.racing-game { color: #facc15; }
+.tool-card.maomao-game { color: #ff70a6; }
 .tool-card.rf-workshop { color: #ff9248; }
 .tool-card.science-classroom { color: #58d8d3; }
 .tool-card.em-notes { color: #64a7ff; }
