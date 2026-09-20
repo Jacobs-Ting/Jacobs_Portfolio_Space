@@ -110,6 +110,8 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .tool-card.game { color: #ff8f68; }
 .tool-card.tarot { color: var(--violet); }
 .tool-card.art3d { color: #ff75a0; }
+.tool-card.fps-game { color: #4ade80; }
+.tool-card.racing-game { color: #facc15; }
 .tool-card.rf-workshop { color: #ff9248; }
 .tool-card.science-classroom { color: #58d8d3; }
 .tool-card.em-notes { color: #64a7ff; }
@@ -119,6 +121,7 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .tool-card.pa-nonlinearity { color: #fb7185; }
 .tool-card.modulation { color: #f472b6; }
 .tool-card.fading-channel { color: #38bdf8; }
+.tool-card.sdr-simulation { color: #a78bfa; }
 .tool-card.waveguide { color: #64a7ff; }
 .tool-card.maxwell { color: #d27cff; }
 .tool-card.antenna { color: #36d9e8; }
