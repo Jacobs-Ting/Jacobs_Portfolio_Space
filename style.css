@@ -118,6 +118,8 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .tool-card.em-notes { color: #64a7ff; }
 .tool-card.comm-notes { color: #818cf8; }
 .tool-card.circuit-notes { color: #f59e0b; }
+.tool-card.ai-algo-notes { color: #10b981; }
+.tool-card.transformer-architecture { color: #34d399; }
 .tool-card.lna-stability { color: #f59e0b; }
 .tool-card.pa-nonlinearity { color: #fb7185; }
 .tool-card.modulation { color: #f472b6; }
