@@ -7,6 +7,7 @@ const toast = document.querySelector('.toast');
 let toastTimer;
 
 function showView(viewName) {
+  if (viewName === 'bio') viewName = 'profile';
   const target = document.getElementById(viewName);
   if (!target) return;
 
@@ -41,4 +42,4 @@ demoLinks.forEach(link => {
 });
 
 const initialView = window.location.hash.slice(1);
-if (initialView && document.getElementById(initialView)) showView(initialView);
+if (initialView && (document.getElementById(initialView) || initialView === 'bio')) showView(initialView);
