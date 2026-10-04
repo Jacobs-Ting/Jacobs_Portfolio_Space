@@ -114,6 +114,12 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .tool-card.racing-game { color: #facc15; }
 .tool-card.maomao-game { color: #ff70a6; }
 .tool-card.fight-game { color: #ff5252; }
+.tool-card.web-games { color: #06b6d4; }
+.tool-card.jungle-shoot { color: #22c55e; }
+.tool-card.interactive-novel { color: #a855f7; }
+.tool-card.fantasy-novel { color: #ec4899; }
+.tool-card.urban-love-story { color: #f43f5e; }
+.tool-card.military-story { color: #84cc16; }
 .tool-card.literary-notes { color: #c084fc; }
 .tool-card.time-travel-story { color: #e879f9; }
 .tool-card.trip-diary { color: #38bdf8; }
