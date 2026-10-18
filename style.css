@@ -119,7 +119,14 @@ h1 em { color: var(--gold); font-style: normal; font-weight: 500; }
 .tool-card.interactive-novel { color: #a855f7; }
 .tool-card.fantasy-novel { color: #ec4899; }
 .tool-card.urban-love-story { color: #f43f5e; }
+.tool-card.online-dating { color: #fb7185; }
 .tool-card.military-story { color: #84cc16; }
+.tool-card.power-game { color: #eab308; }
+.tool-card.qing-succession { color: #dc2626; }
+.tool-card.jiajing-dynasty { color: #f59e0b; }
+.tool-card.natural-science { color: #22c55e; }
+.tool-card.evolution-lab { color: #14b8a6; }
+.tool-card.black-hole { color: #8b5cf6; }
 .tool-card.literary-notes { color: #c084fc; }
 .tool-card.time-travel-story { color: #e879f9; }
 .tool-card.trip-diary { color: #38bdf8; }
